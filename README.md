@@ -59,4 +59,4 @@
   <em>запуск ansible-playbook и остановка контейнеров скриптом</em>
 </p>
 <br>
-[Исходный код](https://github.com/Ollrins/Terraform-the-end/tree/main/src "Ссылка на GitHub")
+[Исходный код](https://github.com/Ollrins/Ansible-intro/tree/main/playbook "Ссылка на GitHub")
