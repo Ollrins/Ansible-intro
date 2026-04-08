@@ -60,3 +60,34 @@
 </p>
 <br>
 [Исходный код](https://github.com/Ollrins/Ansible-intro/tree/main/playbook "Ссылка на GitHub")
+
+
+'''bash
+# Шифрование файлов с паролем netology
+ansible-vault encrypt group_vars/deb/fact.yml --ask-vault-pass
+# Запуск playbook с расшифровкой
+ansible-playbook -i inventory/prod.yml site.yml --ask-vault-pass
+# Пароль: netology
+# Список всех плагинов подключения
+ansible-doc -t connection -l
+# Проверка структуры инвентаря
+ansible-inventory -i inventory/prod.yml --graph
+# Расшифровка файлов с переменными
+ansible-vault decrypt group_vars/deb/fact.yml --ask-vault-pass
+
+# Шифрование отдельного значения PaSSw0rd. Создание зашифрованного значения для строки PaSSw0rd
+ansible-vault encrypt_string 'PaSSw0rd' --name 'some_fact' --ask-vault-pass
+# Пароль: netology
+
+# Добавление зашифрованного значения в group_vars/all/exmp.yml
+cat >> group_vars/all/exmp.yml << 'EOF'
+---
+some_fact: !vault |
+          $ANSIBLE_VAULT;1.1;AES256
+          [полученная_зашифрованная_строка]
+EOF
+# Проверка для localhost
+ansible-playbook -i inventory/prod.yml site.yml --ask-vault-pass --limit localhost
+# Результат: localhost → "PaSSw0rd"
+'''
+
