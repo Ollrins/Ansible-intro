@@ -62,7 +62,7 @@
 [Исходный код](https://github.com/Ollrins/Ansible-intro/tree/main/playbook "Ссылка на GitHub")
 
 
-''''bash
+```bash
 # Шифрование файлов с паролем netology
 ansible-vault encrypt group_vars/deb/fact.yml --ask-vault-pass
 # Запуск playbook с расшифровкой
@@ -89,5 +89,5 @@ EOF
 # Проверка для localhost
 ansible-playbook -i inventory/prod.yml site.yml --ask-vault-pass --limit localhost
 # Результат: localhost → "PaSSw0rd"
-''''
+```
 
