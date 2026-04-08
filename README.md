@@ -60,6 +60,8 @@
 </p>
 <br>
 [Исходный код](https://github.com/Ollrins/Ansible-intro/tree/main/playbook "Ссылка на GitHub")
+<br>
+<br>
 
 
 ```bash
