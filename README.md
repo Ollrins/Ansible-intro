@@ -97,6 +97,7 @@
 <a href="https://github.com/Ollrins/Ansible-intro/tree/main/playbook" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-Ansible--intro-black?logo=github" alt="GitHub">
 </a>
+**→ Исходный код playbook на GitHub**
 <br>
 <br>
 
