@@ -94,10 +94,12 @@
   <em>запуск ansible-playbook и остановка контейнеров скриптом</em>
 </p>
 <br>
-<a href="https://github.com/Ollrins/Ansible-intro/tree/main/playbook" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-Ansible--intro-black?logo=github" alt="GitHub">
+<a href="https://github.com/Ollrins/Ansible-intro/tree/main/playbook" target="_blank"
+   style="display:inline-block;padding:10px 18px;background:#0366d6;color:#fff;
+          text-decoration:none;border-radius:6px;font-family:sans-serif;
+          font-weight:600;font-size:14px;">
+  ★ Ansible-intro на GitHub
 </a>
-**→ Исходный код playbook на GitHub**
 <br>
 <br>
 
